@@ -9,8 +9,46 @@ body{
     padding: 0;
 }
 
+.nav-logo{
+    width: 60px;
+    margin-left: 40px;
+}
+
+.navbar-toggler{
+    background-color: #ec6c06 !important;
+}
+
+.logo-text{
+    color:white !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 28px !important;
+    font-weight: 200;
+    margin: 0 10px;
+    
+}
+
+.navbar-background{
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif !important;
+    
+}
+
+.nav-links-container{
+    margin-right: 40px;
+}
+
+.nav-links{
+    color:white !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 18px !important;
+    margin: 0 10px;
+}
+
+
 nav{
     font-family: 'Roboto', sans-serif;
+    height: 15%;
 }
 
 nav ul{
@@ -32,7 +70,7 @@ nav ul li{
     padding: 8px;
 }
 
-.container{
+.bg-container{
     
     
     color:white;
