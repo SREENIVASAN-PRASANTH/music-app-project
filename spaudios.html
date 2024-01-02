@@ -5,70 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>spaudios</title>
     <link rel="stylesheet" href="spaudios.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li class="brand"><img src="app logo.png" alt="spaudios"></li>
-            <li>Home</li>
-            <li>About</li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-background">
+        <div class="container-fluid">
+          <a class="navbar-brand col-2" href="#" style="align-items: center;"><img src="app logo.png" alt="spaudios" class="nav-logo"><span class = "logo-text">sp audios</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end col-10" id="navbarNavAltMarkup">
+            <div class="navbar-nav nav-links-container">
+              <a class="nav-link nav-links" href="#">Home</a>
+              <a class="nav-link nav-links" href="#">Playlist</a>
+              <a class="nav-link nav-links" href="#">About</a>
+            </div>
+          </div>
+        </div>
     </nav>
 
-    <div class="container">
+    <div class="bg-container container">
         
         <div class="songList">
             <h1>Best of Anirudh Ravichander</h1>
-            <div class="songItemContainer">
-                <div class="songItem">
+            <div class="songItemContainer container-fluid">
+                <div class="songItem col-12">
                     <img src="naa ready.webp" alt="1" >
                     <span class = "songName">Naa Ready</span>
                     <span class="songListPlay"><span class="timeStamp">03:34 <i id = "0" class="fa-sharp songItemPlay fa-regular fa-circle-play"></i></span> </span>
                 </div>
 
-                <div class="songItem">
+                <div class="songItem col-12">
                     <img src="naa ready.webp" alt="1" >
                     <span class = "songName">Naa Ready</span>
                     <span class="songListPlay"><span class="timeStamp">02:19 <i id = "1" class="fa-sharp songItemPlay fa-regular fa-circle-play"></i></span> </span>
                 </div>
 
-                <div class="songItem">
+                <div class="songItem col-12">
                     <img src="naa ready.webp" alt="1" >
                     <span class = "songName">Naa Ready</span>
                     <span class="songListPlay"><span class="timeStamp">02:48 <i id = "2" class="fa-sharp songItemPlay fa-regular fa-circle-play"></i></span> </span>
                 </div>
 
-                <div class="songItem">
+                <div class="songItem col-12">
                     <img src="naa ready.webp" alt="1" >
                     <span class = "songName">Naa Ready</span>
                     <span class="songListPlay"><span class="timeStamp">03:50 <i id = "3" class="fa-sharp songItemPlay fa-regular fa-circle-play"></i></span> </span>
                 </div>
 
-                <div class="songItem">
+                <div class="songItem col-12">
                     <img src="naa ready.webp" alt="1" >
                     <span class = "songName">Naa Ready</span>
                     <span class="songListPlay"><span class="timeStamp">04:08 <i id = "4" class="fa-sharp songItemPlay fa-regular fa-circle-play"></i></span> </span>
                 </div>
 
-                <div class="songItem">
+                <div class="songItem col-12">
                     <img src="naa ready.webp" alt="1" >
                     <span class = "songName">Naa Ready</span>
                     <span class="songListPlay"><span class="timeStamp">04:00 <i id = "5" class="fa-sharp songItemPlay fa-regular fa-circle-play"></i></span> </span>
                 </div>
 
-                <div class="songItem">
+                <div class="songItem col-12">
                     <img src="naa ready.webp" alt="1" >
                     <span class = "songName">Naa Ready</span>
                     <span class="songListPlay"><span class="timeStamp">04:39 <i id = "6" class="fa-sharp songItemPlay fa-regular fa-circle-play"></i></span> </span>
                 </div>
 
-                <div class="songItem">
+                <div class="songItem col-12">
                     <img src="naa ready.webp" alt="1" >
                     <span class = "songName">Naa Ready</span>
                     <span class="songListPlay"><span class="timeStamp">03:40 <i id = "7" class="fa-sharp songItemPlay fa-regular fa-circle-play"></i></span> </span>
                 </div>
 
-                <div class="songItem">
+                <div class="songItem col-12">
                     <img src="naa ready.webp" alt="1" >
                     <span class = "songName">Naa Ready</span>
                     <span class="songListPlay"><span class="timeStamp">03:28 <i id = "8" class="fa-sharp songItemPlay fa-regular fa-circle-play"></i></span> </span>
@@ -83,19 +92,21 @@
 
     </div>
 
-    <div class = "bottom">
-        <input type="range" name="range" id="myProgressBar" min="0" value ="0" max="100">
+    <div class = "bottom container-fluid">
+        <input type="range" name="range" id="myProgressBar" min="0" value ="0" max="100" class = "col-12">
+        <div class="songInfo col-3">
+            <img src="music gif.gif" alt="music gif" id = "gif"><span id="masterSongName">Anbenum Aayudhamdhane (Uyir Padhi Unake)</span>
+        </div>
         <div class="icons">
             <i class="fa-solid fa-2x fa-backward-step" id="previous"></i>
             <i class="fa-sharp fa-2x fa-regular fa-circle-play" id = "masterPlay"></i>
             <i class="fa-solid fa-2x fa-forward-step" id = "next"></i>
         </div>
 
-        <div class="songInfo">
-            <img src="music gif.gif" alt="music gif" id = "gif"><span id="masterSongName">Anbenum Aayudhamdhane (Uyir Padhi Unake)</span>
-        </div>
+        
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/f839f783de.js" crossorigin="anonymous"></script>
     <script src="spaudios.js"></script>
     
